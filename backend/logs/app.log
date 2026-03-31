@@ -1,0 +1,26 @@
+{"time": "2026-03-31 10:26:54", "level": "[32mINFO    [0m", "logger": "app.core.logging", "message": 'Logging initialised (level=INFO, file=logs/app.log)'}
+{"time": "2026-03-31 10:26:54", "level": "[32mINFO    [0m", "logger": "app.main", "message": "Application 'Chat Assistant API' v1.0.0 ready."}
+{"time": "2026-03-31 10:28:10", "level": "[32mINFO    [0m", "logger": "app.core.logging", "message": 'Logging initialised (level=INFO, file=logs/app.log)'}
+{"time": "2026-03-31 10:28:10", "level": "[32mINFO    [0m", "logger": "app.main", "message": "Application 'Chat Assistant API' v1.0.0 ready."}
+{"time": "2026-03-31 10:28:23", "level": "[32mINFO    [0m", "logger": "app.core.logging", "message": 'Logging initialised (level=INFO, file=logs/app.log)'}
+{"time": "2026-03-31 10:28:23", "level": "[32mINFO    [0m", "logger": "app.main", "message": "Application 'Chat Assistant API' v1.0.0 ready."}
+{"time": "2026-03-31 10:28:25", "level": "[32mINFO    [0m", "logger": "app.core.logging", "message": 'Logging initialised (level=INFO, file=logs/app.log)'}
+{"time": "2026-03-31 10:28:25", "level": "[32mINFO    [0m", "logger": "app.main", "message": "Application 'Chat Assistant API' v1.0.0 ready."}
+{"time": "2026-03-31 10:31:53", "level": "[32mINFO    [0m", "logger": "app.core.logging", "message": 'Logging initialised (level=INFO, file=logs/app.log)'}
+{"time": "2026-03-31 10:31:53", "level": "[32mINFO    [0m", "logger": "app.main", "message": "Application 'Chat Assistant API' v1.0.0 ready."}
+{"time": "2026-03-31 10:43:48", "level": "[32mINFO    [0m", "logger": "app.core.logging", "message": 'Logging initialised (level=INFO, file=logs/app.log)'}
+{"time": "2026-03-31 10:43:48", "level": "[32mINFO    [0m", "logger": "app.main", "message": "Application 'Chat Assistant API' v1.0.0 ready."}
+{"time": "2026-03-31 10:52:39", "level": "[32mINFO    [0m", "logger": "app.api.chat", "message": 'Received message (history_len=10)'}
+{"time": "2026-03-31 10:52:40", "level": "[32mINFO    [0m", "logger": "app.request", "message": 'POST /api/chat → 200  (1349.2 ms)'}
+{"time": "2026-03-31 10:53:00", "level": "[32mINFO    [0m", "logger": "app.api.chat", "message": 'Received message (history_len=12)'}
+{"time": "2026-03-31 10:53:01", "level": "[32mINFO    [0m", "logger": "app.request", "message": 'POST /api/chat → 200  (1389.8 ms)'}
+{"time": "2026-03-31 10:55:57", "level": "[32mINFO    [0m", "logger": "app.api.chat", "message": 'Received message (history_len=14)'}
+{"time": "2026-03-31 10:55:58", "level": "[32mINFO    [0m", "logger": "app.request", "message": 'POST /api/chat → 200  (1090.5 ms)'}
+{"time": "2026-03-31 10:56:00", "level": "[32mINFO    [0m", "logger": "app.core.logging", "message": 'Logging initialised (level=INFO, file=logs/app.log)'}
+{"time": "2026-03-31 10:56:00", "level": "[32mINFO    [0m", "logger": "app.main", "message": "Application 'Chat Assistant API' v1.0.0 ready."}
+{"time": "2026-03-31 10:56:11", "level": "[32mINFO    [0m", "logger": "app.api.chat", "message": 'Received message (history_len=16)'}
+{"time": "2026-03-31 10:56:13", "level": "[32mINFO    [0m", "logger": "app.request", "message": 'POST /api/chat → 200  (1138.4 ms)'}
+{"time": "2026-03-31 10:57:42", "level": "[32mINFO    [0m", "logger": "app.api.chat", "message": 'Received message (history_len=18)'}
+{"time": "2026-03-31 10:57:43", "level": "[32mINFO    [0m", "logger": "app.request", "message": 'POST /api/chat → 200  (852.1 ms)'}
+{"time": "2026-03-31 10:57:56", "level": "[32mINFO    [0m", "logger": "app.api.chat", "message": 'Received message (history_len=20)'}
+{"time": "2026-03-31 10:57:57", "level": "[32mINFO    [0m", "logger": "app.request", "message": 'POST /api/chat → 200  (744.0 ms)'}
