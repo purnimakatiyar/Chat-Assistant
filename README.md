@@ -5,6 +5,8 @@ Built with **FastAPI** (backend) · **React + Vite** (frontend) · **Groq AI** (
 
 ---
 
+## Deployed URL: https://chat-assisting-app.netlify.app/
+
 ## Features
 
 - Chat with an AI assistant powered by LLaMA 3.1 via Groq
