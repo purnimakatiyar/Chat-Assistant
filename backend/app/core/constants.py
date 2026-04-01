@@ -5,8 +5,6 @@ All magic strings, prompt templates, format strings, and fixed values live
 here so they have a single source of truth and are easy to find and update.
 """
 
-# ── AI / Groq ─────────────────────────────────────────────────────────────────
-
 CHAT_SYSTEM_PROMPT = (
     "You are a helpful, friendly AI assistant. "
     "Respond naturally and conversationally. "

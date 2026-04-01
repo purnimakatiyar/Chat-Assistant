@@ -24,7 +24,8 @@ export default function ChatContainer() {
       // Build history for context (exclude current message — it's in `message` field)
       const history = messages.map(({ role, content }) => ({ role, content }));
 
-      const res = await fetch("/api/chat", {
+      const API_BASE = import.meta.env.VITE_API_URL ?? "";
+      const res = await fetch(`${API_BASE}/api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: text, history }),
