@@ -18,7 +18,6 @@ logger = logging.getLogger(__name__)
 
 
 def create_app() -> FastAPI:
-    # Logging must be set up before anything else logs
     setup_logging()
 
     app = FastAPI(
@@ -28,7 +27,6 @@ def create_app() -> FastAPI:
         redoc_url="/redoc",
     )
 
-    # Middleware (order matters — added last runs outermost)
     app.add_middleware(RequestLoggingMiddleware)
     app.add_middleware(
         CORSMiddleware,

@@ -22,14 +22,30 @@ class ChatRequest(BaseModel):
 
 class Insights(BaseModel):
     intent: Literal[
-        "greeting", "farewell", "query", "request", "complaint", "praise",
-        "feedback", "clarification", "confirmation", "denial",
-        "troubleshooting", "small_talk", "opinion", "urgent", "other",
+        "greeting", 
+        "farewell", 
+        "query", 
+        "request", 
+        "complaint", 
+        "praise",
+        "feedback", 
+        "clarification",
+        "confirmation", 
+        "denial",
+        "troubleshooting", 
+        "small_talk", 
+        "opinion", 
+        "urgent", 
+        "other",
     ]
     sentiment: Literal[
-        "very_positive", "positive", "slightly_positive",
+        "very_positive", 
+        "positive", 
+        "slightly_positive",
         "neutral",
-        "slightly_negative", "negative", "very_negative",
+        "slightly_negative", 
+        "negative", 
+        "very_negative",
     ]
 
 
