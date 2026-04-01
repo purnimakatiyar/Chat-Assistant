@@ -1,0 +1,37 @@
+services:
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: runtime          # only build the final stage
+    image: chat-assistant-backend:latest
+    container_name: chat-backend
+    restart: unless-stopped
+
+    env_file:
+      - ./backend/.env         # supplies GROQ_API_KEY (never committed)
+
+    environment:
+      LOG_LEVEL: INFO
+      LOG_TO_FILE: "false"     # log to stdout → picked up by Docker log driver
+      WORKERS: "2"
+      PORT: "8000"
+
+    ports:
+      - "8000:8000"
+
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
+
+    # Keep stdout logs in JSON for log aggregators
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

@@ -1,0 +1,18 @@
+# Never copy these into the image
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Secrets — injected at runtime via env vars
+.env
+
+
+logs/
+
+# Dev / editor artefacts
+.git/
+.gitignore
+pyrightconfig.json
+*.md
