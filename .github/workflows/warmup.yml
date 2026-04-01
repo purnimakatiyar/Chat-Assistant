@@ -1,0 +1,27 @@
+name: Keep Render Backend Alive
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # every 10 minutes
+  workflow_dispatch:          # allow manual trigger from GitHub UI
+
+jobs:
+  ping:
+    name: Ping health endpoint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ping /health
+        run: |
+          STATUS=$(curl --silent --output /dev/null --write-out "%{http_code}" \
+            --max-time 60 \
+            "${{ secrets.RENDER_BACKEND_URL }}/health")
+
+          echo "Response status: $STATUS"
+
+          if [ "$STATUS" -ne 200 ]; then
+            echo "Backend returned $STATUS — may still be waking up."
+            exit 1
+          fi
+
+          echo "Backend is alive."
