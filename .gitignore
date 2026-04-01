@@ -8,11 +8,14 @@ __pycache__/
 # Virtual environments
 backend/venv/
 backend/.venv/
+backend/__pycache__/
+backend/logs/
 venv/
 .venv/
 
 # Env files (keep .env.example, ignore real secrets)
 backend/.env
+frontend/.env
 .env
 
 # Logs
@@ -25,6 +28,9 @@ node_modules/
 # Build output
 frontend/dist/
 dist/
+
+# ── Docker ───────────────────────────────────────────────────
+# .docker/
 
 # ── OS / Editor ───────────────────────────────────────────────
 .DS_Store
